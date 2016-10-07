@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/primary"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome! Tell us a bit about you"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="20sp"
+            android:textColor="@color/icons"
+            android:gravity="bottom|center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Phone Number -->
+
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number : "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_margin="16dp"
+            />
+        <EditText
+            android:id="@+id/ed_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_phonenumber"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:hint="Enter number"
+            />
+        <View
+            android:id="@+id/view0"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/ed_phonenumber"
+            />
+
+        <!-- Name -->
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_margin="16dp"
+            android:layout_below="@id/view0"
+            />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_phonenumber"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:maxLength="10"
+            android:inputType="textPersonName"
+            android:hint="Enter name"
+            android:layout_below="@id/view0"
+            />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/ed_name"
+            />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender : "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_margin="16dp"
+            android:layout_below="@id/view1"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/tv_phonenumber"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="16dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"
+                android:fontFamily="sans-serif-regular"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:fontFamily="sans-serif-regular"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/viewg"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/rg_gender"
+            />
+
+        <!-- Date of Birth -->
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB : "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_margin="16dp"
+            android:layout_below="@id/viewg"
+            />
+        <EditText
+            android:id="@+id/ed_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_phonenumber"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:inputType="date"
+            android:hint="Pick DOB"
+            android:layout_below="@id/viewg"
+            />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/ed_dob"
+            />
+
+        <!-- Email -->
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_margin="16dp"
+            android:layout_below="@id/view2"
+            />
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"
+            android:layout_toRightOf="@id/tv_phonenumber"
+            android:layout_below="@id/view2"
+            />
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/ed_email"
+            />
+        <!-- Password -->
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password : "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_margin="16dp"
+            android:layout_below="@id/view3"
+            />
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_phonenumber"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:maxLength="12"
+            android:inputType="textPassword"
+            android:hint="Max 8 - 12 characters"
+            android:layout_below="@id/view3"
+            />
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/ed_password"
+            />
+        <!-- Re-type Password -->
+
+        <TextView
+            android:id="@+id/tv_retypepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re-type : "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_margin="16dp"
+            android:layout_below="@id/view4"
+            />
+        <EditText
+            android:id="@+id/ed_retypepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_phonenumber"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:maxLength="12"
+            android:inputType="textPassword"
+            android:hint="Re-type Password"
+            android:layout_below="@id/view4"
+            />
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/secondary_text"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/ed_retypepassword"
+            />
+
+        <Button
+            android:id="@+id/b_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_ripple"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/icons"
+            android:layout_below="@id/view5"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

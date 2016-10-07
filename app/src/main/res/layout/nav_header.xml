@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/accent"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@mipmap/dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/icons"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pavithran "
+            android:fontFamily="sans-serif-regular"
+            android:textSize="18sp"
+            android:textColor="@color/icons"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8015504364 "
+            android:fontFamily="sans-serif-thin"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/icons"
+            android:layout_marginLeft="16dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

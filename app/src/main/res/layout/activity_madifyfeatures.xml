@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:id="@+id/layout"
+    >
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <TextView
+                android:id="@+id/tv_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appbar"
+                android:layout_margin="8dp"
+                android:fontFamily="sans-serif-regular"
+                android:text="Do you require modifications ?"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/features_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_change" />
+
+            <View
+                android:layout_below="@id/features_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:layout_anchor="@id/layout2"
+            app:layout_anchorGravity="bottom">
+
+            <Button
+                android:id="@+id/b_skip"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="?android:colorFocusedHighlight"
+                android:fontFamily="sans-serif-regular"
+                android:text="Skip this step"
+                android:textAllCaps="false"
+                android:textColor="@color/icons"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/b_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/b_skip"
+                android:background="@color/primary_text"
+                android:fontFamily="sans-serif-regular"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                android:textColor="@color/icons"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

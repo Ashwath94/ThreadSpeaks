@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/backdp" />
+
+        <TextView
+            android:id="@+id/tv_categoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-regular"
+            android:text="Samskruti Sarees Women's Cotton Unstitched Kurti Material"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_categoryDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-regular"
+            android:text="In stock.
+Guaranteed delivery to pincode 600001 - Chennai by Tuesday, September 27 with Two-Day Delivery — Order in the next 5 hours and 27 minutes Details
+Sold by Vasant Cloth Emporium "
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            >
+
+        <TextView
+            android:id="@+id/tv_withmaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-regular"
+            android:textStyle="bold"
+            android:text="With Material "
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_withmaterialprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_withmaterial"
+                android:gravity="right"
+
+                android:fontFamily="sans-serif-regular"
+                android:text="Rs. 500"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_withoutmaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-regular"
+                android:textStyle="bold"
+                android:text="Without Material "
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_withoutmaterialprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_withoutmaterial"
+                android:gravity="right"
+                android:fontFamily="sans-serif-regular"
+                android:text="Rs. 150"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/b_verifydevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_ripple"
+            android:layout_margin="16dp"
+            android:fontFamily="sans-serif-regular"
+            android:textSize="16sp"
+            android:text="Proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/icons"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+</ScrollView>
